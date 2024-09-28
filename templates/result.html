@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Classifier Result</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .result-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .result-container p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        a:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="result-container">
+            <h1>Classification Result</h1>
+            <p><strong>Email:</strong></p>
+            <p>{{ email }}</p>
+            <p><strong>Prediction:</strong> {{ prediction }}</p>
+            <a href="/">Classify Another Email</a>
+        </div>
+    </div>
+</body>
+</html>
