@@ -15,5 +15,6 @@ Follow these steps to set up the project:
 
    ```bash
    git clone https://github.com/bignya23/spam-classifier.git
+   pip install -r requirements.txt
    cd spam-classifier
    python app.py
